@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 90vh;
+    background-color: #f2f3ef;
+    margin-left: 10%;
+    margin-top: 12%;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+/* form */
+#form{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    
+}
+#form input{
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  border-bottom: #e67e22 solid 3px;
+  background-color: #f2f3ef;
+  
+  /* pointer-events: painted; */
+}
+#button{
+    border-radius: 20px;
+    border-color: #f2f3ef;
+    box-shadow: 3px 3px 3px #dcd5d5;
+}
+#button:hover{
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+/* Timer CSS */
+.bday-timer{
+display: flex;
+color: #34495e;
+}
+
+@media all and (max-width: 500px){
+   
+    .bday-timer{
+        display: grid;
+      max-width: 40vh;
+      text-align: center;
+    }
+    #form {
+        display: grid;
+        width: 40%;
+        margin-bottom: 20%;
+       
+    }
+    h1{
+      display: grid;
+    }
+    body{
+        width: 70vh;
+    }
+}
+
+.days-container{
+    /* border: black solid 1px; */
+    background-color: #fdfeff;
+    text-align: center;
+    padding: 4%;
+    margin: 2%;
+    box-shadow: 10px 10px 5px #C0C0C0;
+}
+.days-container:hover{
+    transform: translateY(-7px);
+    transition: 0.3s;
+}
+
+.hours-container{
+    box-shadow: 10px 10px 5px #C0C0C0;
+    background-color: #fdfeff;
+    text-align: center;
+    padding: 4%;
+    margin: 2%;
+}
+.hours-container:hover{
+    transform: translateY(-7px);
+    transition: 0.3s;
+}
+
+.minutes-container{
+    box-shadow: 10px 10px 5px #C0C0C0;
+    background-color: #fdfeff;
+    text-align: center;
+    padding: 4%;
+    margin: 2%;
+}
+.minutes-container:hover{
+    transform: translateY(-7px);
+    transition: 0.3s;
+}
+
+.seconds-container{
+    box-shadow: 10px 10px 5px #C0C0C0;
+    background-color: #fdfeff;
+    text-align: center;
+    padding: 4%;
+    margin: 2%;
+}
+.seconds-container:hover{
+    transform: translateY(-7px);
+    transition: 0.3s;
+}
+
+.big-text{
+    font-size: 6rem;
+    margin: 0 2rem;
+    line-height: 1;
+    font-weight: bold;
+}
+
+h1{
+    color: #34495e;
+    font-size: 50px;
+}
+h1 span{
+    color:#95a5a6
+}
